@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contest</title>
+  <link rel = "icon" href ="img/icon.png" type = "image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <a href="#!"><img src="img/logo.png" alt=""></a>
+        <ul class="pages">
+          <li><a href="#!">Биржа</a></li>
+          <li><a href="#!">Ворки</a></li>
+          <li><a href="#!">Конкурсы</a></li>
+          <li><a href="#!">Создать заказ</a></li>
+        </ul>
+        <ul class="links">
+          <li><a href="#!"><i class='bx bxs-star'></i></a></li>
+          <li><a href="#!"><i class='bx bxs-bell'></i></a></li>
+          <li><a href="#!"><i class='bx bxs-chat' ></i></a></li>
+        </ul>
+        
+        <div id="profile_div">
+          <h4>Ернар Ибрагимов</h4>
+          <img src="img/person.png" alt="">
+          <i id="arrow" class='bx bxs-chevron-down'></i>
+        </div>
+        <span id="hidden">
+          <ul>
+            <li><a href="#!"><i class='bx bx-user' ></i> View profile</a></li>
+            <li><a href="#!"><i class='bx bx-log-out' ></i> Log out</a></li>
+          </ul>
+        </span>
+      </nav>
+      <div class="increament">
+        <p class="active-only" id="p1">1</p>
+        <span id="line-1"></span>
+        <p id="p2">2</p>
+        <span id="line-2"></span>
+        <p id="p3">3</p>
+        <span id="line-3"></span>
+        <p id="p4">4</p>
+        <span id="line-4"></span>
+        <p id="p5">5</p>
+      </div>
+      <div class="names">
+
+      </div>
+    </div>
+  </header>
+  <section id="content-1">
+    <div class="container">
+      <div class="row">
+        <div>
+          <img src="img/man-card.png" alt=""><br>
+          <h3>Опубликуйте бриф</h3><br>
+          <p>Зарезервируйте бюджет конкурса, и мы уведомим всех исполнителей.</p>
+        </div>
+        <div>
+          <img src="img/man-board.png" alt=""><br>
+          <h3>Получайте варианты</h3><br>
+          <p>Участники будут присылать вам готовые работы, которые вы сможете оценивать.</p>
+        </div>
+        <div>
+          <img src="img/boy-hand.png" alt=""><br>
+          <h3>Выберите победителя</h3><br>
+          <p>Определитесь с наилучшей работой на стадии финала и выберите ее победителем.</p>
+        </div>
+        <div>
+          <img src="img/boy-hair.png" alt=""><br>
+          <h3>Получите готовую работу</h3><br>
+          <p>Проведите доработки в рабочей области, если это необходимо.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="content-2">
+    <div class="container">
+      <div class="pol-block">
+        <div class="inp1">
+          <p>Название</p>
+          <input type="text" placeholder="Placeholder">
+        </div>
+        <div class="inp2">
+          <p>Категория</p>
+          <select>
+            <option value="1">Placeholder</option>
+            <option value="2">Placeholder</option>
+            <option value="3">Placeholder</option>
+          </select>
+        </div>
+        <div class="inp2">
+          <p>Подкатегория</p>
+          <select>
+            <option value="1">Placeholder</option>
+            <option value="2">Placeholder</option>
+            <option value="3">Placeholder</option>
+          </select>
+        </div>
+        <div class="tegi">
+          <p class="main-t">Теги</p>
+          <span>
+            <p id="tegs">Тег 1 <i class='bx bx-x'></i></p>
+            <p id="tegs">Тег 2 <i class='bx bx-x'></i></p>
+            <p id="tegs">Дизайн сайта <i class='bx bx-x'></i></p>
+            <p id="tegs">Тег 1 <i class='bx bx-x'></i></p>
+            <p id="tegs">Тег 2 <i class='bx bx-x'></i></p>
+            <p id="tegs">Дизайн сайта <i class='bx bx-x'></i></p>
+          </span>
+        </div>
+        <div class="inp1">
+          <p>Бюджет</p>
+          <input type="text" placeholder="Placeholder">
+        </div>
+        <div class="last">
+          <p class="text-main">Продолжительность</p>
+          <div>
+            <span></span>
+            <span class="ball"></span>
+            <span></span>
+          </div>
+          <p>7 дней</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="content-3">
+    <div class="container">
+      <h3>Описание</h3>
+      <div class="first-d">
+        <i class='bx bx-bold'></i>
+        <i class='bx bx-italic' ></i>
+        <i class='bx bx-smile' ></i>
+        <i class='bx bx-paragraph'></i>
+        <i class='bx bx-align-left'></i>
+        <i class='bx bx-list-ol' ></i>
+        <i class='bx bxs-quote-left' ></i>
+        <i class='bx bx-link' ></i>
+        <i class='bx bxs-image' ></i>
+        <i class='bx bxs-camera' ></i>
+        <i class='bx bx-table' ></i>
+      </div>
+      <div class="content-text">
+        <p>
+          Название компании / частное лицо: <br><br><br><br> 
+          Род деятельности компании:  <br><br><br><br> 
+          Описание категорий продуктов/ у слуг:  <br><br><br><br>
+          Каналы распространения и география продаж: <br><br><br><br>
+          Портрет целевой аудитории:  <br><br><br><br> 
+          Существующее или предполагаемое позиционирование:  <br><br><br><br>
+          Укажите ближайших конкурентов:  <br><br><br><br> 
+          Опишите основные конкурентные преимущества компании / объекта / услуги:  <br><br><br><br> 
+          Дизайн страницы какой социальной сети необходимо разработать: (лишние пункты удалите) <br><br>
+
+          Facebook<br>
+          Вконтакте<br>
+          другое (укажите)<br><br><br> 
+
+          Адрес сайта и целевой страницы:  <br><br><br><br> 
+          Цель создания страницы: (лишние пункты удалите) <br>
+          имидж<br>
+          продажа продукта на странице<br>
+          информирование<br>
+          привлечение трафика на сайт<br>
+          другое (укажите)<br><br><br>
+          Какое должно быть название страницы? <br><br><br><br>  
+          Есть ли логотип компании?  <br><br><br><br> 
+          Есть ли слоган компании?  <br><br><br><br> 
+          Есть ли фирменный стиль компании?  <br><br><br><br>
+          Какой стиль страницы является предпочтительным: (лишние пункты удалите) <br><br>
+
+          строгий, деловой<br>
+          открытый к общению<br>
+          игривый<br>
+          собеседник - друг<br>
+          другое (укажите) <br>
+
+          Какую информацию вы хотите размещать на странице?  <br><br><br><br> 
+          Обязательные элементы для аватары (постоянное изображение справа в Вконтакте или сверху обложки в Facebook): <br><br><br><br> 
+          Обязательные элементы для баннера ВКонтакте (закрепленная новость или обложка в Facebook):  <br><br><br><br> 
+          Обязательные элементы для основного меню страницы / группы:  <br><br><br><br> 
+          Приведите адреса наиболее понравившихся вам страниц / групп (опишите, что именно понравилось):  <br><br><br><br> 
+          Укажите любую дополнительную информацию, которую вы считаете важной.  <br><br><br>
+        </p>
+      </div>
+      <div class="check">
+        <label for="ch-box" class="check_lb">
+          <input id="ch-box" type="checkbox">
+          <!-- <i class='bx bxs-check-circle'></i> -->
+          <i class='bx bx-circle' id="bx"></i>
+        </label>
+        <p class="bold">Разрешаю использовать в предлагаемых на конкурс вариантах стоковые изображения</p><br><br><br>
+        <p class="tekst">Стоковые изображения — это готовые картинки объектов, фотографии, иконки, текстуры и другие дизайнерские элементы, которые могут использоваться авторами при создании конкурсных работ. Стоковые изображения могут быть как платными, так и бесплатными.
+          Использование стоковых изображений может увеличить количество конкурсных работ, но снижает их уникальность.</p>
+      </div>
+    </div>
+  </section>
+  <section id="content-4">
+    <div class="container">
+      <div class="payment">
+        <div>
+          <p>Сумма к оплате</p><br>
+          <h3>250 000 тенге</h3><br><br> <span class="row-hr"></span><br><br>
+          <p>Оплатить через</p><br>
+        </div>
+        <div>
+          <a href="https://qiwi.com"><img src="img/qiwi.png" alt=""></a>
+          <a href="https://webmoney.uz"><img src="img/webmoney.png" alt=""></a>
+          <a href="https://visa.com"><img src="img/visa-master.png" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="content-5">
+    <div class="container">
+      <div>
+        <h3>Поздравляем!</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nibh et volutpat sagittis, turpis sed cum massa.</p>
+        <img src="img/last-person.png" alt="">
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="fo-content">
+        <button id="prev"><h3>Назад</h3></button>
+        <button id="next"><h3>Дальше</h3></button>
+      </div>
+    </div>
+  </footer>
+<script src="js/app.js"></script>
+</body>
+</html>

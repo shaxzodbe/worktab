@@ -1,0 +1,722 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  color: #000;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.active-only {
+  background-color: #1DBF73 !important;
+}
+
+.active-only::after {
+  background: #1DBF73 !important;
+}
+
+.active {
+  background: #1DBF73 !important;
+}
+
+body header .container nav {
+  position: relative;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header .container nav ul.pages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 35%;
+}
+
+body header .container nav ul.pages li a {
+  opacity: 1;
+  border-bottom: 1px solid transparent;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+body header .container nav ul.pages li a:hover {
+  opacity: 0.6;
+  border-bottom: 1px solid #000;
+}
+
+body header .container nav ul.links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 8%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body header .container nav ul.links i {
+  color: #B0AAD0;
+  font-size: 24px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+body header .container nav ul.links i:hover {
+  color: #000;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+body header .container nav div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 25%;
+  cursor: pointer;
+}
+
+body header .container nav div i {
+  font-size: 25px;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+body header .container nav span {
+  display: none;
+  position: absolute;
+  top: 110%;
+  right: 0;
+  padding: 20px;
+  background-color: #1DBF73;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  opacity: 0.8;
+  border-radius: 5px;
+  z-index: 99;
+}
+
+body header .container nav span::before {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 80%;
+  right: 5%;
+  background: #1DBF73;
+  height: 30%;
+  width: 20%;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  z-index: -99;
+}
+
+body header .container nav span ul li {
+  padding: 5px;
+  border-bottom: 1px solid transparent;
+  margin-bottom: 2px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+body header .container nav span ul li:hover {
+  border-bottom: 1px solid #000;
+}
+
+body header .container .increament {
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 7%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header .container .increament span {
+  max-width: 19%;
+  width: 18%;
+  height: 3px;
+  background: #B0AAD0;
+  z-index: -99;
+}
+
+body header .container .increament p {
+  width: 48px;
+  height: 48px;
+  background: #B0AAD0;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  position: relative;
+}
+
+body header .container .increament p::after {
+  content: '';
+  display: block;
+  position: absolute;
+  background: transparent;
+  width: 64px;
+  height: 64px;
+  opacity: 0.25;
+  z-index: -66;
+  border-radius: 50%;
+}
+
+body header .container .increament p:first-child::before {
+  content: 'Что такое конкурс?';
+  display: block;
+  position: absolute;
+  color: #000;
+  top: 120%;
+  width: 170px;
+}
+
+body header .container .increament p:last-child::before {
+  content: 'Публикация';
+  display: block;
+  position: absolute;
+  color: #000;
+  top: 120%;
+}
+
+body header .container .increament #p2::before {
+  content: 'Основное';
+  display: block;
+  position: absolute;
+  color: #000;
+  top: 120%;
+}
+
+body header .container .increament #p3::before {
+  content: 'Описание';
+  display: block;
+  position: absolute;
+  color: #000;
+  top: 120%;
+}
+
+body header .container .increament #p4::before {
+  content: 'Оплата';
+  display: block;
+  position: absolute;
+  color: #000;
+  top: 120%;
+}
+
+body #content-1 {
+  display: block;
+  margin-bottom: 6%;
+}
+
+body #content-1 .container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body #content-1 .container .row div {
+  width: 23%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body #content-2 {
+  display: none;
+}
+
+body #content-2 .container .pol-block {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #content-2 .container .pol-block .inp1 {
+  margin-bottom: 40px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body #content-2 .container .pol-block .inp1 p {
+  width: 100%;
+  text-align: left;
+}
+
+body #content-2 .container .pol-block .inp1 input {
+  width: 95%;
+  height: 20px;
+  background: transparent;
+  outline: none;
+  padding: 10px;
+  border: none;
+  border-bottom: 3px solid #F2F0FE;
+}
+
+body #content-2 .container .pol-block .inp1 input::-webkit-input-placeholder {
+  color: #F2F0FE;
+}
+
+body #content-2 .container .pol-block .inp1 input:-ms-input-placeholder {
+  color: #F2F0FE;
+}
+
+body #content-2 .container .pol-block .inp1 input::-ms-input-placeholder {
+  color: #F2F0FE;
+}
+
+body #content-2 .container .pol-block .inp1 input::placeholder {
+  color: #F2F0FE;
+}
+
+body #content-2 .container .pol-block .inp2 {
+  width: 48%;
+  margin-bottom: 40px;
+}
+
+body #content-2 .container .pol-block .inp2 select {
+  width: 100%;
+  padding: 10px;
+  color: #F2F0FE;
+  border: none;
+  outline: none;
+  border-bottom: 3px solid #F2F0FE;
+}
+
+body #content-2 .container .pol-block .inp2 select option {
+  color: #F2F0FE;
+}
+
+body #content-2 .container .pol-block .tegi {
+  width: 100%;
+  border-bottom: 3px solid #F2F0FE;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+body #content-2 .container .pol-block .tegi .main-t {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+body #content-2 .container .pol-block .tegi span {
+  width: 95%;
+}
+
+body #content-2 .container .pol-block .tegi span #tegs {
+  background-color: #F2F0FE;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 20px;
+  margin-bottom: 5px;
+}
+
+body #content-2 .container .pol-block .tegi span #tegs i {
+  font-size: 15px;
+  -webkit-transform: rotate(0deg) scale(1);
+          transform: rotate(0deg) scale(1);
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+
+body #content-2 .container .pol-block .tegi span #tegs i:hover {
+  -webkit-transform: rotate(180deg) scale(1.5);
+          transform: rotate(180deg) scale(1.5);
+}
+
+body #content-2 .container .pol-block .last {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+body #content-2 .container .pol-block .last p.text-main {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+body #content-2 .container .pol-block .last div {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #content-2 .container .pol-block .last div span:first-child {
+  width: 30%;
+  height: 7px;
+  background: #1DBF73;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+body #content-2 .container .pol-block .last div span:last-child {
+  width: 70%;
+  height: 7px;
+  background: #B0AAD0;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+body #content-2 .container .pol-block .last div span.ball {
+  width: 22px;
+  height: 22px;
+  background: #1DBF73;
+  border-radius: 50%;
+  z-index: 99;
+}
+
+body #content-2 .container .pol-block .last p {
+  width: 10%;
+}
+
+body #content-3 {
+  display: none;
+}
+
+body #content-3 .container h3 {
+  margin-bottom: 40px;
+}
+
+body #content-3 .container .first-d {
+  background: #EBE8FF;
+  border-radius: 10px;
+  padding: 5px 15px;
+  margin-bottom: 20px;
+}
+
+body #content-3 .container .first-d i {
+  font-size: 25px;
+  margin-right: 15px;
+}
+
+body #content-3 .container .content-text {
+  padding: 0px 20px;
+}
+
+body #content-3 .container .check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body #content-3 .container .check .check_lb {
+  cursor: pointer;
+  width: 5%;
+}
+
+body #content-3 .container .check .check_lb i {
+  font-size: 35px;
+}
+
+body #content-3 .container .check .check_lb i.bx-circle {
+  color: #B0AAD0;
+}
+
+body #content-3 .container .check .check_lb i.bxs-check-circle {
+  color: #28a8ea;
+}
+
+body #content-3 .container .check .check_lb #ch-box {
+  opacity: 0;
+}
+
+body #content-3 .container .check p.bold {
+  display: inline-block;
+  font-weight: bold;
+  width: 90%;
+}
+
+body #content-3 .container .check p.tekst {
+  margin-left: 60px;
+  margin-bottom: 40px;
+}
+
+body #content-4 {
+  display: none;
+  margin-bottom: 5%;
+}
+
+body #content-4 .container .payment {
+  width: 50%;
+  margin: 0 auto;
+  border: 1px solid #EBE8FF;
+  border-radius: 20px;
+  padding: 25px;
+}
+
+body #content-4 .container .payment div p {
+  color: #656084;
+  text-align: center;
+  width: 100%;
+}
+
+body #content-4 .container .payment div h3 {
+  width: 100%;
+  text-align: center;
+  color: #1DBF73;
+}
+
+body #content-4 .container .payment div .row-hr {
+  width: 95%;
+  height: 1px;
+  background: #F2F0FE;
+  display: block;
+  margin: 0 auto;
+}
+
+body #content-4 .container .payment div:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+}
+
+body #content-4 .container .payment div:last-child a img {
+  padding: 20px;
+  border: 1px solid #EBE8FF;
+  border-radius: 20px;
+}
+
+body #content-5 {
+  display: none;
+}
+
+body #content-5 .container div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #content-5 .container div h3 {
+  margin-bottom: 30px;
+}
+
+body #content-5 .container div p {
+  margin-bottom: 40px;
+}
+
+body footer {
+  margin-bottom: 30px;
+}
+
+body footer .container .fo-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 2%;
+}
+
+body footer .container .fo-content button {
+  width: 240px;
+  height: 60px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+body footer .container .fo-content button#prev {
+  background: #F2F0FE;
+  -webkit-box-shadow: 0px 10px 30px transparent;
+          box-shadow: 0px 10px 30px transparent;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+body footer .container .fo-content button#prev:hover {
+  -webkit-box-shadow: 0px 10px 30px #656084;
+          box-shadow: 0px 10px 30px #656084;
+}
+
+body footer .container .fo-content button#prev h3 {
+  color: #656084;
+}
+
+body footer .container .fo-content button#next {
+  background: #1DBF73;
+  -webkit-box-shadow: 0px 10px 30px transparent;
+          box-shadow: 0px 10px 30px transparent;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+body footer .container .fo-content button#next:hover {
+  -webkit-box-shadow: 0px 10px 30px #656084;
+          box-shadow: 0px 10px 30px #656084;
+}
+
+body footer .container .fo-content button#next h3 {
+  color: #F6FAFD;
+}
+/*# sourceMappingURL=style.css.map */
